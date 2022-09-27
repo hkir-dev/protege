@@ -231,6 +231,17 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                	<argLine>
+                		--add-opens java.base/java.io=ALL-UNNAMED 
+                		--add-opens java.base/sun.nio.ch=ALL-UNNAMED 
+						--add-opens java.base/java.lang=ALL-UNNAMED
+						--add-opens java.base/java.security=ALL-UNNAMED
+						--add-opens java.base/java.net=ALL-UNNAMED
+						--add-opens java.base/java.util=ALL-UNNAMED
+						--add-opens java.desktop/java.awt=ALL-UNNAMED
+                	</argLine>
+                </configuration>
             </plugin>
 
             <plugin>
@@ -246,6 +257,13 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                	<argLine>
+                		@{argLine}
+                		--add-opens java.base/java.io=ALL-UNNAMED 
+						--add-opens java.base/java.lang=ALL-UNNAMED
+                	</argLine>
+                </configuration>
             </plugin>
         </plugins>
     </build>
