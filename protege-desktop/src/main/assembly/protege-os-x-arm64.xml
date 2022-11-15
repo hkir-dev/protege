@@ -100,13 +100,13 @@
 
 
         <fileSet>
-            <directory>src/main/env/os-x-arm64/bundle-resources</directory>
+            <directory>src/main/env/os-x/bundle-resources</directory>
             <outputDirectory>${osx.bundle.name}/Contents/</outputDirectory>
         </fileSet>
 
         <!-- This is done separately in order to use resource filtering to incorporate version info -->
         <fileSet>
-            <directory>src/main/env/os-x-arm64/bundle-info</directory>
+            <directory>src/main/env/os-x/bundle-info</directory>
             <outputDirectory>${osx.bundle.name}/Contents/</outputDirectory>
             <filtered>true</filtered>
         </fileSet>
