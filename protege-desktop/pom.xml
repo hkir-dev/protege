@@ -74,6 +74,13 @@
 
 		<dependency>
 			<groupId>edu.stanford.protege</groupId>
+			<artifactId>jre.os-x.arm64</artifactId>
+			<version>11.0.17_8</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.stanford.protege</groupId>
 			<artifactId>jre.win</artifactId>
 			<version>11.0.17_8</version>
 			<scope>runtime</scope>
@@ -219,6 +226,7 @@
 									<descriptors>
 										<descriptor>src/main/assembly/protege-platform-independent.xml</descriptor>
 										<descriptor>src/main/assembly/protege-os-x.xml</descriptor>
+										<descriptor>src/main/assembly/protege-os-x-arm64.xml</descriptor>
 										<descriptor>src/main/assembly/protege-win.xml</descriptor>
 										<descriptor>src/main/assembly/protege-linux.xml</descriptor>
 									</descriptors>
